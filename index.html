@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container">
+        <div class="clip-path"></div>
         <header>
             <img src="images/logo.png" alt="pepsi-logo">
             <nav>
@@ -25,13 +26,27 @@
             <div class="text-box">
                 <h2>It's not just any drink <br> It's <span>Pepsi</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quibusdam, voluptate voluptatum tempora, sequi, quaerat quia aliquid aut magnam velit possimus temporibus quidem optio maxime perspiciatis aspernatur! Eos, omnis natus.</p>
-                <button class="products"><a href="#">View All Products</a></button>
+                <button class="products"><a href="#" >View All Products</a></button>
             </div>
 
         <div class="img-box">
-            <img src="images/pepsi001.png" alt="">
+            <img src="images/pepsi001.png" alt="" class="pepsi">
         </div>
+
+        <ul class="social-media">
+            <li><a href="#"><img src="images/facebook.png" alt="" class="fb"></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+        </ul>
         </section>
+
+        <ul class="thumbnails">
+            <li><img src="images/pepsi001.png" alt="" onmouseover="imageChange('images/pepsi001.png'); changeClipColor('#004a7f'); changeButtonColor('#004a7f')"></li>
+            <li><img src="images/pepsi002.png" alt="" onmouseover="imageChange('images/pepsi002.png'); changeClipColor('#959ea8'); changeButtonColor('#959ea8')"></li>
+            <li><img src="images/pepsi003.png" alt="" onmouseover="imageChange('images/pepsi003.png'); changeClipColor('#181b1d'); changeButtonColor('#181b1d')"></li>
+        </ul>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
